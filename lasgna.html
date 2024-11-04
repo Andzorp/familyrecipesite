@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freezer Friendly Lasagna</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1><a href="index.html">Recipe Website</a></h1>
+      <button id="menu-toggle">☰</button>
+      <div class="dropdown">
+        <button class="dropbtn">Filter Recipes</button>
+        <div class="dropdown-content">
+          <a href="#" data-filter="all">All</a>
+          <a href="#" data-filter="appetizer">Appetizers</a>
+          <a href="#" data-filter="salad">Salads</a>
+          <a href="#" data-filter="chicken">Chicken</a>
+          <a href="#" data-filter="dinner">Dinners</a>
+          <a href="#" data-filter="dessert">Desserts</a>
+        </div>
+      </div>
+    </div>
+  </header>
+    
+      <nav id="sidebar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shopping-list.html">Shopping List</a></li>
+        </ul>
+      </nav>
+  
+  <main class="recipe-detail">
+    <section class="recipe-info">
+        <div class="recipe-image-container">
+          <img src="images/lasagna.jpg" alt="One-Pot Lemon Herb Chicken & Rice" class="recipe-image">
+        </div>
+        <h1>Freezer Friendly Lasagna
+          <div class="back-to-home-button-header">
+            <a href="index.html" class="button back-to-home-button">Back to Home</a>
+          </div>
+        </h1>
+        <h2>Ingredients</h2>
+  <ul id="ingredients-list">
+    <li>
+      <input type="checkbox" id="ingredient1" data-item="15 oz. ricotta cheese">
+      <label for="ingredient1">15 oz. ricotta cheese</label>
+    </li>
+    <li>
+      <input type="checkbox" id="ingredient2" data-item="2 eggs">
+      <label for="ingredient2">2 eggs</label>
+    </li>
+    <li>
+      <input type="checkbox" id="ingredient3" data-item="2 cups mozzarella cheese">
+      <label for="ingredient3">2 cups mozzarella cheese</label>
+    </li>
+    <li>
+      <input type="checkbox" id="ingredient4" data-item="½ cup Parmesan cheese, grated">
+      <label for="ingredient4">½ cup Parmesan cheese, grated</label>
+    </li>
+    <li>
+      <input type="checkbox" id="ingredient5" data-item="6 oz. can tomato paste">
+      <label for="ingredient5">6 oz. can tomato paste</label>
+    </li>
+    <li>
+      <input type="checkbox" id="ingredient6" data-item="15 oz. can diced tomatoes">
+      <label for="ingredient6">15 oz. can diced tomatoes</label>
+    </li>
+    <li>
+      <input type="checkbox" id="ingredient7" data-item="1 jar marinara sauce">
+      <label for="ingredient7">1 jar marinara sauce</label>
+    </li>
+    <li>
+      <input type="checkbox" id="ingredient8" data-item="2 tablespoons fresh chopped basil">
+      <label for="ingredient8">2 tablespoons fresh chopped basil</label>
+    </li>
+    <li>
+      <input type="checkbox" id="ingredient9" data-item="2 tablespoons fresh chopped Italian parsley">
+      <label for="ingredient9">2 tablespoons fresh chopped Italian parsley</label>
+    </li>
+    <li>
+      <input type="checkbox" id="ingredient10" data-item="1 small onion, diced">
+      <label for="ingredient10">1 small onion, diced</label>
+    </li>
+    <li>
+        <input type="checkbox" id="ingredient10" data-item="2 garlic cloves">
+        <label for="ingredient10">2 garlic cloves</label>
+      </li>
+      <li>
+        <input type="checkbox" id="ingredient10" data-item="1 lb ground beef">
+        <label for="ingredient10">1 lb ground beef</label>
+      </li>
+      <li>
+        <input type="checkbox" id="ingredient10" data-item="1 lb Italian ground sausage">
+        <label for="ingredient10">1 lb Italian ground sausage</label>
+      </li>
+      <li>
+        <input type="checkbox" id="ingredient10" data-item="12 lasagna noodles, plus extra in case of breakage">
+        <label for="ingredient10">12 lasagna noodles, plus extra in case of breakage</label>
+      </li>
+  </ul>
+  
+  <button id="view-shopping-list">Add to Shopping List</button>
+  <button href="shopping-list.html" id="go-to-master-list">Go to Master Shopping List</button>
+  
+
+  <!-- Modal Structure -->
+  <div id="shopping-list-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Shopping List</h2>
+      <ul id="shopping-list">
+        <!-- Added items will be listed here -->
+      </ul>
+    </div>
+  </div>
+
+        <h2>Instructions</h2>
+        <ol>
+          <li>Line the noodles up on parchment or wax paper.</li>
+          <li>Spread an even layer of the cheese mixture over each lasagna noodle, about 2 ½ tablespoons each.</li>
+          <li>Spread ¼ cup of sauce over each noodle (3 cups total), and reserve the rest.</li>
+          <li>Roll up the noodles (tightly, while keeping the filling in), and transfer them to the baking dish.</li>
+          <li>Top with remaining meat sauce, then sprinkle it with remaining mozzarella.</li>
+          <li>Spray foil with nonstick cooking spray and place it spray-side-down on top of the baking dish to prevent the cheese from sticking to it.</li>
+          <li>Freeze.</li>
+          <li>To cook, remove from the freezer and put it straight into a 375-degree oven. Bake for 35 minutes.</li>
+        </ol>
+      </section>
+  </main>
+
+
+<script src="script.js"></script>
+<script src="shopping-list.js"></script>
+
+  <footer>
+    <p>&copy; 2024 Recipe Website</p>
+  </footer>
+</body>
+</html>
